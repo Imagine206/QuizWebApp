@@ -18,11 +18,19 @@ async function getQuiz(){
 
 getQuiz()
     .then(data => {
-        data.forEach(data => console.log(data))
+        data.forEach(data => console.log(data.question))
     })
     .catch(error => {
         console.log("an error: ", error)
     })
+
+
+const display = () => {
+    const questionEl = document.getElementById('question')
+    const options = document.querySelector('option');
+
+    
+}
 
 
 function loopIt(data){
@@ -30,3 +38,6 @@ function loopIt(data){
         console.log(data[i])
     }
 }
+
+
+

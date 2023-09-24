@@ -9,9 +9,9 @@
 </head>
 <body>
 
-    <header class="bg-gray-50">
+    <header id="titleHeader" class="headerTakeQuiz bg-gray-50">
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-          <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="flex gap-10 sm:flex sm:items-center sm:justify-between">
             <div class="text-center sm:text-left">
               <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">
                 Random Quiz!
@@ -21,23 +21,13 @@
                 Test your knowledged
               </p>
             </div>
-      
-            <div class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-      
-              <button
-                class="block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
-                type="button"
-              >
-                Take Quiz
-              </button>
-            </div>
           </div>
         </div>
-      </header>
-<main class="container mx-auto px-5">
+    </header>
+<main id="quizContainer" class="container mx-auto px-5 ">
     <fieldset class="space-y-4">
         <div class="bg-slate-300 px-5 py-3 text-sm font-medium rounded-lg">
-            <p>What year Was muhammed(pbuh) born?</p>
+            <p id="question">What year Was muhammed(pbuh) born?</p>
         </div>
       
         <div>
@@ -67,7 +57,7 @@
                   clip-rule="evenodd"
                 />
               </svg>
-              <p class="text-gray-700 dark:text-gray-200">Standard</p>
+              <p class="text-gray-700 dark:text-gray-200 option">Standard</p>
             </div>
           </label>
         </div>
@@ -99,7 +89,7 @@
                 />
               </svg>
       
-              <p class="text-gray-700 dark:text-gray-200">Next Day</p>
+              <p class="text-gray-700 dark:text-gray-200 option">Next Day</p>
             </div>
           </label>
         </div>
@@ -131,7 +121,7 @@
                 />
               </svg>
       
-              <p class="text-gray-700 dark:text-gray-200">Next Day</p>
+              <p class="text-gray-700 dark:text-gray-200 option">Next Day</p>
             </div>
           </label>
         </div>
@@ -163,13 +153,13 @@
                 />
               </svg>
       
-              <p class="text-gray-700 dark:text-gray-200">Next Day</p>
+              <p class="text-gray-700 dark:text-gray-200 option">Next Day</p>
             </div>
           </label>
         </div>
-        <div class="flex justify-between">
+        <div class="flex gap-2 justify-between">
         <button
-                class="block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
+                class="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
                 type="button"
             >
                 Next
